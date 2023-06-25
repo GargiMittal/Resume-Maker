@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Maker</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- why is this div for -->
+    <div class="container" id="cv-form">
+        <h1 class="text-center my-2">Resume Maker</h1>
+        <p class="text-center">By Gargi</p>
+
+        <!-- div for margin I think?? -->
+        <div class="row">
+
+            <!-- div to split the screen -->
+            <div class="col md-6">
+                <!-- first col -->
+                <!-- personal Information -->
+                <h3>Personal Information</h3>
+                <!-- this div is for Your name -->
+                <div class="form-group">
+                    <label for="nameField">Your Name</label>
+                    <input type="text" id="nameField" placeholder="Enter Here" class="form-control" />
+                </div>
+
+
+                <!-- this div is for contact -->
+                <div class="form-group" mt-2>
+                    <label for="contactField">Your Contact</label>
+                    <input type="text" id="contactField" placeholder="Enter Here" class="form-control" />
+                </div>
+
+                <!-- this div is for address -->
+                <div class="form-group" mt-2>
+                    <label for="addressField">Your Address</label>
+                    <textarea id="addressField" placeholder="Enter Here" class="form-control" rows="3"></textarea>
+                </div>
+
+                <div class="form-group mt-3">
+                    <label for="">Profile Picture</label>
+                    <input id="imgField" type="file" class="form-control">
+
+                </div>
+
+                <!-- this just says important link lol -->
+                <p class="text-secondary" my-3>Important Links</p>
+
+                <!-- this div is for facebook links -->
+                <div class="form-group" mt-2>
+                    <label for="fbField">Facebook</label>
+                    <input type="text" id="fbField" placeholder="Enter Here" class="form-control" />
+                </div>
+                <!-- this is the div for instagram link -->
+                <div class="form-group" mt-2>
+                    <label for="instaField">Instagram</label>
+                    <input type="text" id="instaField" placeholder="Enter Here" class="form-control" />
+                </div>
+
+                <!-- this div is for linkedIn field -->
+                <div class="form-group" mt-2>
+                    <label for="linkedField">LinkedIn</label>
+                    <input type="text" id="linkedField" placeholder="Enter Here" class="form-control" />
+                </div>
+                <!-- this closes the div for the first half -->
+            </div>
+
+            <div class="col md-6">
+                <!-- second col  -->
+                <!-- this div the above this div move to the second column -->
+                <h3>Professional Information</h3>
+
+                <!-- this div input's objectve -->
+                <div class="form-group" mt-2>
+                    <label for="">Objective</label>
+                    <textarea placeholder="Enter Here" rows="5" id="objectiveField" class="form-control"></textarea>
+                </div>
+                <!-- this div inputs work experience -->
+                <div class="form-group" mt-2 id="we">
+                    <label for="">Work Experience</label>
+                    <textarea placeholder="Enter Here" class="form-control weField" rows="3"></textarea>
+                    <!-- new text area here -->
+                    <!-- this div is the start of a button which copies the worlexprence box -->
+                    <div class="container text-center mt-2" id="weAddButton">
+                        <button onclick="addNewWEField()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+                <!-- work experence closed -->
+
+                <!-- the div which means container for accademic qulification -->
+                <div class="form-group" mt-2 id="aq">
+                    <label for="">Academic Qualification</label>
+                    <textarea placeholder="Enter Here" class="form-control aqField" rows="3"></textarea>
+                    <!-- button div -->
+                    <div class="container text-center mt-2" id="aqAddButton">
+                        <button onclick="addNewAQField()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+                <!-- aq is closed -->
+            </div>
+            <!-- div for second half is closed -->
+
+            <!-- this is the start of the div after the div for second half so we back at start -->
+            <!-- this div is for the button to genrate cv -->
+            <div class="container text-center mt-3">
+                <button onclick="genreateCV()" class="btn btn-primary btn-lg">Generate CV</button>
+            </div>
+            <!-- closing the container for the split thing  -->
+        </div>
+        <!-- closing why are you here div -->
+    </div>
+
+
+
+    <!-- tempelete for the resume -->
+
+
+
+    <div class="container" id="cv-templete">
+
+
+        <!-- creating another set of 2 divs div in dif for row and column -->
+        <div class="row">
+            <!-- first colon with 4 grid -->
+            <div class="col-md-4 text-center py-5 background">
+                <!-- adding img -->
+                <img src="profile.jpg" alt="" class="img-fluid myimg" id="imgTemplate">
+
+                <div class="container">
+                    <p id="nameT1">Gargi Mittal</p>
+                    <p id="contactT">+91792035723, +9154325632</p>
+                    <p id="addressT">435/22 sector-7 Delhi,India</p>
+                    <!-- creates a pretty horizontal line -->
+                    <hr />
+                    <!-- this is an anchor tag this makes link ig-->
+                    <!-- we put link here lol -->
+                    <p><a id="fbT" href="#1">https://www.facebook.com/lol</a></p>
+                    <p><a id="instaT" href="#1">https://www.instagram.com/lol</a></p>
+                    <p><a id="linkedT" href="#1">https://www.linkedIn.com/lol</a></p>
+
+                </div>
+
+            </div>
+            <!-- second colon with 8 grids -->
+            <div class="col-md-8 py-5">
+                <!-- big name -->
+                <h1 id="nameT2" class="text-center" style="font-weight: 980;">Gargi Mittal</h1>
+
+                <!-- objective card -->
+                <div class="card mt-4">
+                    <!-- header div -->
+                    <div class="card-header background">
+                        <h3>Objective</h3>
+                    </div>
+                    <!-- body div -->
+                    <div class="card-body">
+                        <p id="objectiveT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati unde non rem, minus
+                            tempore repellendus officiis libero! Culpa accusamus maxime sequi accusantium asperiores.
+                            Magni error, consectetur maxime labore dolores libero numquam blanditiis
+                            temporibus et iste aspernatur, iure, officia repellendus a provident dolorum ducimus
+                            fugiat beatae voluptates. Tempore quis fugit suscipit.</p>
+
+                    </div>
+                </div>
+
+                <!-- div for work experence card -->
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Work Experience</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="weT">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, earum.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, earum.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, earum.</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- div for accadamic qualification -->
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>acadamic Qualification</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="aqT">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, earum.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, earum.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, earum.</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="container mt-3 text-center">
+                    <button onclick="printCV()" class="btn background">
+                        Print CV
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+/* #cv-form{
+    display: none;
+} */
+
+
+#cv-templete{
+    display: none;
+}
+
+/* this class is to make changes in the profile img */
+.myimg{
+    border: 1px solid lavender;
+    border-radius: 50%;
+    width: 200px;
+}
+
+.background{
+    background-color: lavender;
+}
+
