@@ -2,6 +2,10 @@
 
 Create professional resumes effortlessly, right in your browser.
 
+## [Live Demo](https://gargimittal.github.io/Resume-Maker/)
+
+Experience the resume builder in action!
+
 ## Features
 - User-friendly interface: Easily fill in your information with clear prompts and organized sections.
 - Comprehensive resume sections: Include personal information, contact details, objective, work experience, academic qualifications, and social media links.
