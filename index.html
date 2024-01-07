@@ -15,8 +15,8 @@
 <body>
     <!-- why is this div for -->
     <div class="container" id="cv-form">
-        <h1 class="text-center my-2">Resume Maker</h1>
-        <p class="text-center">By Gargi</p>
+        <h1 class="text-center my-2">RESUME MAKER</h1>
+        <p class="text-center">-By Gargi Mittal</p>
 
         <!-- div for margin I think?? -->
         <div class="row">
@@ -41,7 +41,7 @@
 
                 <!-- this div is for address -->
                 <div class="form-group" mt-2>
-                    <label for="addressField">Your Address</label>
+                    <label for="addressField">Skills</label>
                     <textarea id="addressField" placeholder="Enter Here" class="form-control" rows="3"></textarea>
                 </div>
 
@@ -56,12 +56,12 @@
 
                 <!-- this div is for facebook links -->
                 <div class="form-group" mt-2>
-                    <label for="fbField">Facebook</label>
+                    <label for="fbField">Portfolio</label>
                     <input type="text" id="fbField" placeholder="Enter Here" class="form-control" />
                 </div>
                 <!-- this is the div for instagram link -->
                 <div class="form-group" mt-2>
-                    <label for="instaField">Instagram</label>
+                    <label for="instaField">Twitter</label>
                     <input type="text" id="instaField" placeholder="Enter Here" class="form-control" />
                 </div>
 
@@ -80,7 +80,7 @@
 
                 <!-- this div input's objectve -->
                 <div class="form-group" mt-2>
-                    <label for="">Objective</label>
+                    <label for="">Career Objective</label>
                     <textarea placeholder="Enter Here" rows="5" id="objectiveField" class="form-control"></textarea>
                 </div>
                 <!-- this div inputs work experience -->
@@ -90,7 +90,7 @@
                     <!-- new text area here -->
                     <!-- this div is the start of a button which copies the worlexprence box -->
                     <div class="container text-center mt-2" id="weAddButton">
-                        <button onclick="addNewWEField()" class="btn btn-primary btn-sm">Add</button>
+                        <button onclick="addNewWEField()" class="btn btn-secondary btn-sm">Add</button>
                     </div>
                 </div>
                 <!-- work experence closed -->
@@ -101,7 +101,7 @@
                     <textarea placeholder="Enter Here" class="form-control aqField" rows="3"></textarea>
                     <!-- button div -->
                     <div class="container text-center mt-2" id="aqAddButton">
-                        <button onclick="addNewAQField()" class="btn btn-primary btn-sm">Add</button>
+                        <button onclick="addNewAQField()" class="btn btn-secondary btn-sm">Add</button>
                     </div>
                 </div>
                 <!-- aq is closed -->
@@ -111,8 +111,9 @@
             <!-- this is the start of the div after the div for second half so we back at start -->
             <!-- this div is for the button to genrate cv -->
             <div class="container text-center mt-3">
-                <button onclick="genreateCV()" class="btn btn-primary btn-lg">Generate CV</button>
+                <button onclick="genreateCV()" class="btn btn-secondary btn-lg mb-3">Generate CV</button>
             </div>
+
             <!-- closing the container for the split thing  -->
         </div>
         <!-- closing why are you here div -->
@@ -158,7 +159,7 @@
                 <div class="card mt-4">
                     <!-- header div -->
                     <div class="card-header background">
-                        <h3>Objective</h3>
+                        <h3>Career Objective</h3>
                     </div>
                     <!-- body div -->
                     <div class="card-body">
