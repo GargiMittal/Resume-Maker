@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.js"></script>
 
 </head>
 
@@ -201,8 +202,11 @@
                     </div>
                 </div>
                 <div class="container mt-3 text-center">
-                    <button onclick="printCV()" class="btn background">
+                    <button  id="printButton" onclick="printCV()" class="btn background">
                         Print CV
+                    </button>
+                    <button id="downloadButton" onclick="downloadPDF()" class="btn background ml-2">
+                        Download PDF
                     </button>
                 </div>
             </div>
