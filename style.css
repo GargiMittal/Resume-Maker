@@ -3,7 +3,10 @@
 } */
 
 body {
-  background-color: #f0f0f0;
+    background: linear-gradient(to bottom, #bbb9b9, #f0f0f0);
+    font-family: 'Arial', sans-serif; /* Replace with your preferred font family */
+
+
 }
 
 #cv-templete{
@@ -22,3 +25,68 @@ body {
     background-color: lavender;
 }
 
+@media only screen and (max-width: 767px) {
+    /* Remove split-screen layout for small screens */
+    .row {
+        flex-direction: column;
+    }
+
+    /* Adjust padding for smaller screens */
+    .col {
+        padding: 15px;
+    }
+
+    /* Adjust the font size for better readability on smaller screens */
+ 
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    /* Center align text in the professional information section */
+    #cv-form .col.md-6,
+    #cv-form .col.md-6 h3 {
+        text-align: center;
+    }
+
+    /* Center align text in the template section */
+    #cv-templete .col-md-4,
+    #cv-templete .col-md-8 h1 {
+        text-align: center;
+    }
+
+    /* Adjust margin and padding for smaller screens */
+    .my-2,
+    .my-3,
+    .my-4,
+    .mb-4,
+    .mb-5 {
+        margin-bottom: 10px;
+    }
+
+    .mt-2,
+    .mt-3,
+    .mt-4,
+    .mt-5 {
+        margin-top: 10px;
+    }
+
+    .mt-2,
+    .mt-3,
+    .mt-4,
+    .mt-5,
+    .mb-2,
+    .mb-3,
+    .mb-4,
+    .mb-5 {
+        margin-bottom: 10px;
+    }
+}
