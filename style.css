@@ -1,92 +1,89 @@
-/* #cv-form{
-    display: none;
-} */
-
 body {
     background: url('bg1.jpg') no-repeat center center fixed;
     background-size: cover;
     font-family: 'Poppins', sans-serif;
 }
 
-   
-#cv-templete{
+#cv-templete {
     display: none;
 }
 
-
-/* this class is to make changes in the profile img */
-.myimg{
-    border: 1px solid lavender;
+.myimg {
+    border: 2px solid lavender;
     border-radius: 50%;
     width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.background{
+.background {
     background-color: lavender;
 }
 
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: lavender;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #555;
+}
+
+.btn {
+    background-color: lavender;
+    color: #333;
+    border: 1px solid #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
 @media only screen and (max-width: 767px) {
-    /* Remove split-screen layout for small screens */
     .row {
         flex-direction: column;
     }
 
-    /* Adjust padding for smaller screens */
     .col {
         padding: 15px;
     }
 
-    /* Adjust the font size for better readability on smaller screens */
- 
-
-    h2 {
-        font-size: 20px;
-    }
-
-    h3 {
+    h1, h2, h3 {
         font-size: 18px;
     }
 
     p {
-        font-size: 16px;
+        font-size: 14px;
     }
 
-    /* Center align text in the professional information section */
     #cv-form .col.md-6,
     #cv-form .col.md-6 h3 {
         text-align: center;
     }
 
-    /* Center align text in the template section */
     #cv-templete .col-md-4,
     #cv-templete .col-md-8 h1 {
         text-align: center;
     }
 
-    /* Adjust margin and padding for smaller screens */
     .my-2,
     .my-3,
     .my-4,
     .mb-4,
-    .mb-5 {
-        margin-bottom: 10px;
-    }
-
+    .mb-5,
     .mt-2,
     .mt-3,
     .mt-4,
     .mt-5 {
-        margin-top: 10px;
-    }
-
-    .mt-2,
-    .mt-3,
-    .mt-4,
-    .mt-5,
-    .mb-2,
-    .mb-3,
-    .mb-4,
-    .mb-5 {
-        margin-bottom: 10px;
+        margin: 10px 0;
     }
 }
